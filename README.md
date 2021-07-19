@@ -12,7 +12,7 @@
 </br>
    
   <a href="https://github.com/dylandasilva1999/plantly-ios-app">
-    <!--<img src="Images/App Icon.png" alt="Logo" width="140" height="140">-->
+    <img src="Images/App Icon.png" alt="Logo" width="140" height="140">
   </a>
   
   <h3 align="center">Plantly</h3>
