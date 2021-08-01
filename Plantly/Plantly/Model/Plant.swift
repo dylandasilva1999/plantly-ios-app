@@ -12,7 +12,8 @@ struct Plant: Identifiable {
     var name: String
     var description: String
     var image: String
-    var type: [String]
-    var propagation: [String]
-    var light: [String]
+    var type: String
+    var propagation: String
+    var light: String
+    var category: String
 }
