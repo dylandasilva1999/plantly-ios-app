@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct PlantListView: View {
+    
+    var plants: [Plant] = Plants
+    
     var body: some View {
-        List() {
-            PlantRowView(plant: Plants[0])
+        ScrollView {
+            LazyVStack() {
+                ForEach(plants.shuffled()) {
+                    item in PlantRowView(plant: item)
+                        .padding(.vertical, 5)
+                }
+            }
         }
     }
 }

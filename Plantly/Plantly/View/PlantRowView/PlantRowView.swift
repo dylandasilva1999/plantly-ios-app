@@ -19,26 +19,27 @@ struct PlantRowView: View {
                 .scaledToFill()
                 .frame(width: 90, height: 100, alignment: .leading)
                 .cornerRadius(15.0)
-                .padding(5.0)
+                .padding(0)
             
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text("\(plant.name).")
-                    .font(Font.custom("Kollektif-Bold", size: 20))
+                    .font(Font.custom("Kollektif-Bold", size: 18))
                     .foregroundColor(.white)
                     .textCase(.lowercase)
                 
                 Text(plant.description)
                     .font(Font.custom("Kollektif", size: 13))
                     .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 5))
+                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 
                 
                 Text("type: \(plant.type)")
                     .font(Font.custom("Kollektif", size: 13))
                     .foregroundColor(Color("Dark Green"))
+                    .textCase(.lowercase)
             }
         }
-        .frame(width: .infinity, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+        .frame(width: 320, height: 100, alignment: .center)
         .padding(20.0)
         .background(Color("Primary Green"))
         .cornerRadius(20.0)
