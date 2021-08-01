@@ -13,8 +13,7 @@ struct ContentView: View {
             Color("Primary Green")
                 .ignoresSafeArea()
             Text("plantly.")
-                .font(.system(size: 60))
-                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .font(Font.custom("Kollektif-Bold", size: 60))
                 .foregroundColor(.white)
                 .padding()
         }
