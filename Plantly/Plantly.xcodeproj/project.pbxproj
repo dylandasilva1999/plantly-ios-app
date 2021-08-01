@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5762C8ED26B6F4A00009D3F9 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762C8EC26B6F4A00009D3F9 /* Plant.swift */; };
 		57DA3D6826B6DF4B006A8A8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */; };
 		57DA3D6D26B6E4CC006A8A8E /* Kollektif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57DA3D6926B6E4CC006A8A8E /* Kollektif-BoldItalic.ttf */; };
 		57DA3D6F26B6E4CC006A8A8E /* Kollektif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57DA3D6B26B6E4CC006A8A8E /* Kollektif-Bold.ttf */; };
@@ -19,7 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Plantly/Preview Content/Launch Screen/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		5762C8EC26B6F4A00009D3F9 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Plantly/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		57DA3D6926B6E4CC006A8A8E /* Kollektif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kollektif-BoldItalic.ttf"; sourceTree = "<group>"; };
 		57DA3D6A26B6E4CC006A8A8E /* Kollektif.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kollektif.ttf; sourceTree = "<group>"; };
 		57DA3D6B26B6E4CC006A8A8E /* Kollektif-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kollektif-Bold.ttf"; sourceTree = "<group>"; };
@@ -43,6 +45,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5762C8E926B6F29F0009D3F9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5762C8EC26B6F4A00009D3F9 /* Plant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5762C8EA26B6F2D70009D3F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5762C8EB26B6F2E00009D3F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		57DA3D7126B6E511006A8A8E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -52,14 +76,6 @@
 				57DA3D6B26B6E4CC006A8A8E /* Kollektif-Bold.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		57DA3D7226B6E528006A8A8E /* Launch Screen */ = {
-			isa = PBXGroup;
-			children = (
-				57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */,
-			);
-			path = "Launch Screen";
 			sourceTree = "<group>";
 		};
 		57E00AA426A5A28400D91E2D = {
@@ -81,7 +97,11 @@
 		57E00AAF26A5A28400D91E2D /* Plantly */ = {
 			isa = PBXGroup;
 			children = (
+				5762C8EB26B6F2E00009D3F9 /* ViewModel */,
+				5762C8EA26B6F2D70009D3F9 /* View */,
+				5762C8E926B6F29F0009D3F9 /* Model */,
 				57E00AB026A5A28400D91E2D /* PlantlyApp.swift */,
+				57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */,
 				57E00AB226A5A28400D91E2D /* ContentView.swift */,
 				57E00AB426A5A28500D91E2D /* Assets.xcassets */,
 				57E00AB926A5A28500D91E2D /* Info.plist */,
@@ -93,7 +113,6 @@
 		57E00AB626A5A28500D91E2D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				57DA3D7226B6E528006A8A8E /* Launch Screen */,
 				57DA3D7126B6E511006A8A8E /* Fonts */,
 				57E00AB726A5A28500D91E2D /* Preview Assets.xcassets */,
 			);
@@ -175,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57E00AB326A5A28400D91E2D /* ContentView.swift in Sources */,
+				5762C8ED26B6F4A00009D3F9 /* Plant.swift in Sources */,
 				57E00AB126A5A28400D91E2D /* PlantlyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
