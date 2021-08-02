@@ -14,6 +14,7 @@
 		57BB8AE426B83F4F005C3588 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BB8AE326B83F4F005C3588 /* NavBarView.swift */; };
 		57BB8AE626B840B6005C3588 /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BB8AE526B840B6005C3588 /* Tips.swift */; };
 		57BB8AE826B840CA005C3588 /* Tip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BB8AE726B840CA005C3588 /* Tip.swift */; };
+		57BB8AEB26B84797005C3588 /* TipRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57BB8AEA26B84797005C3588 /* TipRowView.swift */; };
 		57DA3D6826B6DF4B006A8A8E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */; };
 		57DA3D6D26B6E4CC006A8A8E /* Kollektif-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57DA3D6926B6E4CC006A8A8E /* Kollektif-BoldItalic.ttf */; };
 		57DA3D6F26B6E4CC006A8A8E /* Kollektif-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57DA3D6B26B6E4CC006A8A8E /* Kollektif-Bold.ttf */; };
@@ -33,6 +34,7 @@
 		57BB8AE326B83F4F005C3588 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		57BB8AE526B840B6005C3588 /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
 		57BB8AE726B840CA005C3588 /* Tip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip.swift; sourceTree = "<group>"; };
+		57BB8AEA26B84797005C3588 /* TipRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipRowView.swift; sourceTree = "<group>"; };
 		57DA3D6726B6DF4B006A8A8E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Plantly/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
 		57DA3D6926B6E4CC006A8A8E /* Kollektif-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Kollektif-BoldItalic.ttf"; sourceTree = "<group>"; };
 		57DA3D6A26B6E4CC006A8A8E /* Kollektif.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Kollektif.ttf; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		5762C8EA26B6F2D70009D3F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				57BB8AE926B84777005C3588 /* TipRowView */,
 				57BB8AE226B83F35005C3588 /* NavBarView */,
 				5762C8F626B71AE20009D3F9 /* PlantRowView */,
 			);
@@ -121,6 +124,14 @@
 				57BB8AE326B83F4F005C3588 /* NavBarView.swift */,
 			);
 			path = NavBarView;
+			sourceTree = "<group>";
+		};
+		57BB8AE926B84777005C3588 /* TipRowView */ = {
+			isa = PBXGroup;
+			children = (
+				57BB8AEA26B84797005C3588 /* TipRowView.swift */,
+			);
+			path = TipRowView;
 			sourceTree = "<group>";
 		};
 		57DA3D7126B6E511006A8A8E /* Fonts */ = {
@@ -258,6 +269,7 @@
 				57BB8AE426B83F4F005C3588 /* NavBarView.swift in Sources */,
 				57BB8AE626B840B6005C3588 /* Tips.swift in Sources */,
 				57BB8AE826B840CA005C3588 /* Tip.swift in Sources */,
+				57BB8AEB26B84797005C3588 /* TipRowView.swift in Sources */,
 				5762C8ED26B6F4A00009D3F9 /* Plant.swift in Sources */,
 				57E00AB126A5A28400D91E2D /* PlantlyApp.swift in Sources */,
 			);
