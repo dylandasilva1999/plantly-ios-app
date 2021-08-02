@@ -30,8 +30,6 @@ struct PlantRowView: View {
                 Text(plant.description)
                     .font(Font.custom("Kollektif", size: 13))
                     .foregroundColor(.white)
-                    .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
-                
                 
                 Text("type: \(plant.type)")
                     .font(Font.custom("Kollektif", size: 13))

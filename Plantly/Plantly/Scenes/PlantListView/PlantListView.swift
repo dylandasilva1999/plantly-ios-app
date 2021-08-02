@@ -14,7 +14,7 @@ struct PlantListView: View {
     var body: some View {
         ScrollView {
             LazyVStack() {
-                ForEach(plants.shuffled()) {
+                ForEach(plants) {
                     item in PlantRowView(plant: item)
                         .padding(.vertical, 5)
                 }
