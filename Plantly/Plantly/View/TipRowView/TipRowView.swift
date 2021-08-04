@@ -24,10 +24,10 @@ struct TipRowView: View {
                     .font(Font.custom("Kollektif", size: 20))
                     .foregroundColor(.white)
                     .textCase(.lowercase)
-                    .frame(width: 180, height: .infinity, alignment: .leading)
+                    .frame(width: 170, height: .infinity, alignment: .leading)
                     .lineSpacing(3.0)
             }
-            .padding(EdgeInsets(.init(top: 0, leading: 50, bottom: 0, trailing: 0)))
+            .padding(EdgeInsets(.init(top: 0, leading: 120, bottom: 0, trailing: 0)))
 
             Spacer()
             
@@ -36,11 +36,11 @@ struct TipRowView: View {
                 .resizable()
                 .scaledToFill()
                 .frame(width: 130, height: 130, alignment: .center)
-                .padding()
+                .padding(EdgeInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 40)))
             
             
         }
-        .frame(maxWidth: .infinity, maxHeight: 190)
+        .frame(maxWidth: 300, maxHeight: 190)
         .background(Color("Primary Green"))
         .cornerRadius(25.0)
     }

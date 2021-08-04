@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572B35C526BB1A910023E8DB /* TipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572B35C426BB1A910023E8DB /* TipListView.swift */; };
 		5762C8ED26B6F4A00009D3F9 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762C8EC26B6F4A00009D3F9 /* Plant.swift */; };
 		5762C8F026B6F5F00009D3F9 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762C8EF26B6F5F00009D3F9 /* Plants.swift */; };
 		5762C8F226B702AA0009D3F9 /* PlantRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762C8F126B702AA0009D3F9 /* PlantRowView.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		572B35C426BB1A910023E8DB /* TipListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipListView.swift; sourceTree = "<group>"; };
 		5762C8EC26B6F4A00009D3F9 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		5762C8EF26B6F5F00009D3F9 /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
 		5762C8F126B702AA0009D3F9 /* PlantRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantRowView.swift; sourceTree = "<group>"; };
@@ -59,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		572B35C326BB1A6F0023E8DB /* TipListView */ = {
+			isa = PBXGroup;
+			children = (
+				572B35C426BB1A910023E8DB /* TipListView.swift */,
+			);
+			path = TipListView;
+			sourceTree = "<group>";
+		};
 		5762C8E926B6F29F0009D3F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +107,7 @@
 		5762C8F326B717FE0009D3F9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				572B35C326BB1A6F0023E8DB /* TipListView */,
 				5762C8F726B71B020009D3F9 /* PlantListView */,
 			);
 			path = Scenes;
@@ -264,6 +275,7 @@
 			files = (
 				57E00AB326A5A28400D91E2D /* ContentView.swift in Sources */,
 				5762C8F226B702AA0009D3F9 /* PlantRowView.swift in Sources */,
+				572B35C526BB1A910023E8DB /* TipListView.swift in Sources */,
 				5762C8F526B718640009D3F9 /* PlantListView.swift in Sources */,
 				5762C8F026B6F5F00009D3F9 /* Plants.swift in Sources */,
 				57BB8AE426B83F4F005C3588 /* NavBarView.swift in Sources */,
