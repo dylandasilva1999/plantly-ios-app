@@ -14,7 +14,7 @@ struct TipListView: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 20) {
-                ForEach(tips) { item in
+                ForEach(tips.shuffled()) { item in
                     GeometryReader { geometry in
                         TipRowView(tip: item)
                             .rotation3DEffect(Angle(degrees:
