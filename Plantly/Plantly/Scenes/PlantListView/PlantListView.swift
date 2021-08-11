@@ -12,11 +12,15 @@ struct PlantListView: View {
     var plants: [Plant] = Plants
     
     var body: some View {
-        ScrollView {
-            LazyVStack() {
-                ForEach(plants) {
-                    item in PlantRowView(plant: item)
-                        .padding(.vertical, 5)
+        NavigationView {
+            ScrollView {
+                LazyVStack() {
+                    ForEach(plants) { item in
+                        NavigationLink(destination: PlantDetailView(plant: item)) {
+                            PlantRowView(plant: item)
+                                .padding(.vertical, 5)
+                        }
+                    }
                 }
             }
         }
