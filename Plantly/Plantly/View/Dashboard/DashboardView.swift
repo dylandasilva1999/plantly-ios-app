@@ -30,6 +30,8 @@ struct DashboardView: View {
                         .padding(EdgeInsets(.init(top: 00, leading: 35, bottom: 0, trailing: 35)))
                     
                     TipListView()
+                    
+                    
                 }
                 .frame(maxWidth: .infinity)
                 .padding(EdgeInsets(.init(top: 30, leading: 0, bottom: 0, trailing: 0)))

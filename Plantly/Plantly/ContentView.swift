@@ -62,8 +62,8 @@ struct MainView : View {
             }
             .padding(EdgeInsets(.init(top: 0, leading: 35, bottom: 0, trailing: 35)))
             ZStack {
-                Dashboard().opacity(self.index == "Dashboard" ? 1 : 0)
-                Settings().opacity(self.index == "Settings" ? 1 : 0)
+                DashboardView().opacity(self.index == "Dashboard" ? 1 : 0)
+                SettingsView().opacity(self.index == "Settings" ? 1 : 0)
             }
         }
         .background(Color.white)
@@ -71,19 +71,3 @@ struct MainView : View {
     }
 }
 
-struct Dashboard : View {
-    var body: some View {
-        DashboardView()
-    }
-}
-
-//Settings View
-struct Settings : View {
-    var body: some View{
-        GeometryReader{_ in
-            VStack {
-                Text("Settings")
-            }
-        }
-    }
-}
