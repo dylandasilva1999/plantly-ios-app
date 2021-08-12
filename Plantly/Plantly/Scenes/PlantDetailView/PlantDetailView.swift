@@ -26,7 +26,7 @@ struct PlantDetailView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 50, style: .continuous)
                             .foregroundColor(.white)
-                            .frame(width: UIScreen.main.bounds.width, height: 540, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: UIScreen.main.bounds.width, height: 500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .padding(.top, 360)
                         VStack(alignment: .leading, spacing: 20) {
                             Text(plant.name)
@@ -128,7 +128,7 @@ struct PlantDetailView: View {
                             }
                         }
                         .frame(width: 320, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .padding(.top, 320)
+                        .padding(.top, 360)
                     }
                 }
             }

@@ -31,6 +31,20 @@ struct DashboardView: View {
                     
                     TipListView()
                     
+                    VStack {
+                        HStack {
+                            Text("Categories")
+                                .font(Font.custom("Kollektif-Bold", size: 30))
+                                .foregroundColor(.black)
+                                .multilineTextAlignment(.center)
+                            Spacer()
+                            Text("click any item")
+                                .font(Font.custom("Kollektif", size: 18))
+                                .foregroundColor(Color("Light Grey"))
+                                .multilineTextAlignment(.center)
+                        }
+                    }
+                    .padding(EdgeInsets(.init(top: 30, leading: 35, bottom: 0, trailing: 35)))
                 }
                 .frame(maxWidth: .infinity)
                 .padding(EdgeInsets(.init(top: 30, leading: 0, bottom: 0, trailing: 0)))
