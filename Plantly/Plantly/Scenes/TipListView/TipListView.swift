@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TipListView: View {
     
+    //Initialiser for the tips list/data
     var tips: [Tip] = Tips
     
     var body: some View {

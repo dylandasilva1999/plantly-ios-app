@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Plant Model
 struct Plant: Identifiable {
     var id = UUID()
     var name: String

@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct MenuView: View {
+    
+    //State index to default to dashboard
     @State var index = "Dashboard"
+    //State var for view displayed
     @State var show = false
     
     var body: some View {

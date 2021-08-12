@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct PlantlyApp: App {
     
+    //App storage to remember if user has done the onboarding
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
     
     var body: some Scene {

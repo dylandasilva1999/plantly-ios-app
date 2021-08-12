@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Tip Model
 struct Tip: Identifiable {
     var id = UUID()
     var tip: String

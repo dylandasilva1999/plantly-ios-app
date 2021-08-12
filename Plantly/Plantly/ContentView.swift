@@ -10,12 +10,14 @@ import SwiftUI
 //Content View
 struct ContentView: View {
     
+    //State var which sets index to default Dashboard
     @State var index = "Dashboard"
+    //State show variable for menu items
     @State var show = false
+    //Use app storage to remeber the currentPage
     @AppStorage("currentPage") var currentPage = 1
     
     var body: some View {
-        
         if currentPage > totalPages {
             MenuView()
         } else {
@@ -33,7 +35,9 @@ struct ContentView_Previews: PreviewProvider {
 //Main View
 struct MainView : View {
     
+    //Show Menu Bool
     @Binding var show : Bool
+    //Index for menu items
     @Binding var index : String
     
     var body: some View{

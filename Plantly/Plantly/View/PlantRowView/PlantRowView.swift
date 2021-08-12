@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PlantRowView: View {
     
+    //Initialiser for plant
     var plant: Plant
     
     var body: some View {

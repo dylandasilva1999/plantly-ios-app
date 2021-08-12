@@ -9,10 +9,12 @@ import SwiftUI
 
 struct OnboardingScreenView: View {
     
+    //Variables used in each screen of onboarding
     var title: String
     var detail: String
     var image: String
     
+    //App storage for holding current page value
     @AppStorage("currentPage") var currentPage = 1
     
     var body: some View {
@@ -57,7 +59,7 @@ struct OnboardingScreenView: View {
                 Image(image)
                     .resizable()
                     .edgesIgnoringSafeArea(.all)
-                    .frame(width: .infinity, height: 520, alignment: .center)
+                    .frame(width: UIScreen.main.bounds.width, height: 520, alignment: .center)
                     .padding(.top, 420)
             )
             

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    //App storage for the onboarding
     @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     var body: some View{
@@ -24,60 +25,60 @@ struct SettingsView: View {
                     .padding(EdgeInsets(.init(top: 10, leading: 35, bottom: 0, trailing: 35)))
                     VStack(spacing: 18) {
                         GroupBox(label:
-                                Text("About Plantly")
+                                    Text("About Plantly")
                                     .font(Font.custom("Kollektif-Bold", size: 18))
                                     .foregroundColor(Color("Primary Green"))
                                     .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                                     .padding(.leading, 35)
                                     .padding(.top, 35),
-                            content: { Text("Plantly is an interactive plant care mobile application for those who need knowledge on plants and a guide to gardening success.")
-                                .font(Font.custom("Kollektif", size: 18))
-                                .foregroundColor(Color("Primary Green"))
-                                .padding(.top, 35)
-                        })
-                        .cornerRadius(30)
-                        .groupBoxStyle(TransparentGroupBox())
+                                 content: { Text("Plantly is an interactive plant care mobile application for those who need knowledge on plants and a guide to gardening success.")
+                                    .font(Font.custom("Kollektif", size: 18))
+                                    .foregroundColor(Color("Primary Green"))
+                                    .padding(.top, 35)
+                                 })
+                            .cornerRadius(30)
+                            .groupBoxStyle(TransparentGroupBox())
                         
                         GroupBox(label:
-                                Text("Development Information")
+                                    Text("Development Information")
                                     .font(Font.custom("Kollektif-Bold", size: 18))
                                     .foregroundColor(Color("Primary Green"))
                                     .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
                                     .padding(.leading, 35)
                                     .padding(.top, 35),
-                            content: {
-                                VStack {
-                                    HStack {
-                                        Text("Developed by")
-                                        .font(Font.custom("Kollektif", size: 18))
-                                        .foregroundColor(Color("Primary Green"))
-                                        .padding(.top, 35)
-                                        Spacer()
-                                        Text("Dylan da Silva")
-                                        .font(Font.custom("Kollektif-Bold", size: 18))
-                                        .foregroundColor(Color("Primary Green"))
-                                        .padding(.top, 35)
-                                        .padding(.trailing, 20)
+                                 content: {
+                                    VStack {
+                                        HStack {
+                                            Text("Developed by")
+                                                .font(Font.custom("Kollektif", size: 18))
+                                                .foregroundColor(Color("Primary Green"))
+                                                .padding(.top, 35)
+                                            Spacer()
+                                            Text("Dylan da Silva")
+                                                .font(Font.custom("Kollektif-Bold", size: 18))
+                                                .foregroundColor(Color("Primary Green"))
+                                                .padding(.top, 35)
+                                                .padding(.trailing, 20)
+                                        }
+                                        HStack {
+                                            Text("Version")
+                                                .font(Font.custom("Kollektif", size: 18))
+                                                .foregroundColor(Color("Primary Green"))
+                                                .padding(.top, 5)
+                                            Spacer()
+                                            Text("0.0.1")
+                                                .font(Font.custom("Kollektif-Bold", size: 18))
+                                                .foregroundColor(Color("Primary Green"))
+                                                .padding(.trailing, 20)
+                                                .padding(.top, 5)
+                                        }
                                     }
-                                    HStack {
-                                        Text("Version")
-                                        .font(Font.custom("Kollektif", size: 18))
-                                        .foregroundColor(Color("Primary Green"))
-                                        .padding(.top, 5)
-                                        Spacer()
-                                        Text("0.0.1")
-                                        .font(Font.custom("Kollektif-Bold", size: 18))
-                                        .foregroundColor(Color("Primary Green"))
-                                        .padding(.trailing, 20)
-                                            .padding(.top, 5)
-                                    }
-                                }
-                        })
-                        .cornerRadius(30)
-                        .groupBoxStyle(TransparentGroupBox())
+                                 })
+                            .cornerRadius(30)
+                            .groupBoxStyle(TransparentGroupBox())
                         
                         GroupBox(label:
-                                Text("Source Code")
+                                    Text("Source Code")
                                     .font(Font.custom("Kollektif-Bold", size: 18))
                                     .foregroundColor(Color("Primary Green"))
                                     .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -93,9 +94,9 @@ struct SettingsView: View {
                                         .padding(.top, 32)
                                     Spacer()
                                  })
-                        })
-                        .cornerRadius(30)
-                        .groupBoxStyle(TransparentGroupBox())
+                                 })
+                            .cornerRadius(30)
+                            .groupBoxStyle(TransparentGroupBox())
                         
                         Spacer()
                         

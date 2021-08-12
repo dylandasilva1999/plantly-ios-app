@@ -9,7 +9,9 @@ import SwiftUI
 
 struct OnboardingView: View {
     
+    //App storage for holding the current page
     @AppStorage("currentPage") var currentPage = 1
+    //App storage for holding if user has done onboarding
     @AppStorage("isOnboarding") var isOnboarding: Bool?
     
     var body: some View {

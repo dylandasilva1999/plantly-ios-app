@@ -11,6 +11,7 @@ struct PlantDetailView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    //Initialiser for plant
     var plant: Plant
     
     var body: some View {
@@ -21,7 +22,7 @@ struct PlantDetailView: View {
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
                     .frame(width: UIScreen.main.bounds.width, height: 500, alignment: .top)
-
+                
                 VStack {
                     ZStack {
                         RoundedRectangle(cornerRadius: 50, style: .continuous)
@@ -39,7 +40,7 @@ struct PlantDetailView: View {
                                 .lineSpacing(3)
                             HStack {
                                 GroupBox(label:
-                                        Text("Type")
+                                            Text("Type")
                                             .font(Font.custom("Kollektif-Bold", size: 16))
                                             .foregroundColor(Color("Primary Green"))
                                             .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -47,20 +48,20 @@ struct PlantDetailView: View {
                                             .padding(.top, 18),
                                          content: { HStack {
                                             Text(plant.type)
-                                               .font(Font.custom("Kollektif", size: 15))
-                                               .foregroundColor(Color("Primary Green"))
-                                               .padding(.top, 20)
-                                               .padding(.leading, 4)
-                                               .textCase(.lowercase)
+                                                .font(Font.custom("Kollektif", size: 15))
+                                                .foregroundColor(Color("Primary Green"))
+                                                .padding(.top, 20)
+                                                .padding(.leading, 4)
+                                                .textCase(.lowercase)
                                             Spacer()
                                          }
-                                })
-                                .frame(width: 150, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(20)
-                                .groupBoxStyle(PlantDetailGroupBoxMuted())
+                                         })
+                                    .frame(width: 150, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .cornerRadius(20)
+                                    .groupBoxStyle(PlantDetailGroupBoxMuted())
                                 
                                 GroupBox(label:
-                                        Text("Light")
+                                            Text("Light")
                                             .font(Font.custom("Kollektif-Bold", size: 16))
                                             .foregroundColor(Color("Primary Green"))
                                             .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -75,15 +76,15 @@ struct PlantDetailView: View {
                                                 .textCase(.lowercase)
                                             Spacer()
                                          }
-                                })
-                                .frame(width: 155, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .padding(.leading, 5)
-                                .cornerRadius(20)
-                                .groupBoxStyle(PlantDetailGroupBoxMuted())
+                                         })
+                                    .frame(width: 155, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .padding(.leading, 5)
+                                    .cornerRadius(20)
+                                    .groupBoxStyle(PlantDetailGroupBoxMuted())
                             }
                             VStack {
                                 GroupBox(label:
-                                        Text("Propagation")
+                                            Text("Propagation")
                                             .font(Font.custom("Kollektif-Bold", size: 16))
                                             .foregroundColor(Color("Primary Green"))
                                             .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -91,21 +92,21 @@ struct PlantDetailView: View {
                                             .padding(.top, 18),
                                          content: { HStack {
                                             Text(plant.propagation)
-                                               .font(Font.custom("Kollektif", size: 15))
-                                               .foregroundColor(Color("Primary Green"))
-                                               .padding(.top, 20)
-                                               .padding(.leading, 4)
-                                               .textCase(.lowercase)
+                                                .font(Font.custom("Kollektif", size: 15))
+                                                .foregroundColor(Color("Primary Green"))
+                                                .padding(.top, 20)
+                                                .padding(.leading, 4)
+                                                .textCase(.lowercase)
                                             Spacer()
                                          }
-                                })
-                                .frame(width: 320, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(20)
+                                         })
+                                    .frame(width: 320, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .cornerRadius(20)
                                     .padding(.top, -6)
-                                .groupBoxStyle(PlantDetailGroupBoxMuted())
+                                    .groupBoxStyle(PlantDetailGroupBoxMuted())
                                 
                                 GroupBox(label:
-                                        Text("Scientific Name")
+                                            Text("Scientific Name")
                                             .font(Font.custom("Kollektif-Bold", size: 16))
                                             .foregroundColor(.white)
                                             .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -113,18 +114,18 @@ struct PlantDetailView: View {
                                             .padding(.top, 18),
                                          content: { HStack {
                                             Text(plant.scientificName)
-                                               .font(Font.custom("Kollektif", size: 15))
+                                                .font(Font.custom("Kollektif", size: 15))
                                                 .foregroundColor(.white)
-                                               .padding(.top, 20)
-                                               .padding(.leading, 4)
-                                               .textCase(.lowercase)
+                                                .padding(.top, 20)
+                                                .padding(.leading, 4)
+                                                .textCase(.lowercase)
                                             Spacer()
                                          }
-                                })
-                                .frame(width: 320, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                                .cornerRadius(20)
+                                         })
+                                    .frame(width: 320, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .cornerRadius(20)
                                     .padding(.top, 6)
-                                .groupBoxStyle(PlantDetailGroupBoxGreen())
+                                    .groupBoxStyle(PlantDetailGroupBoxGreen())
                             }
                         }
                         .frame(width: 320, height: 380, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)

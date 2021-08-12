@@ -9,9 +9,12 @@ import SwiftUI
 
 struct PlantListView: View {
     
+    //State var for search text input
     @State var searchText = ""
+    //State var for if the user is busy searching
     @State var isSearching = false
-
+    
+    //Initialiser for the plants list/data
     var plants: [Plant] = Plants
     
     var body: some View {

@@ -8,10 +8,15 @@
 import SwiftUI
 
 struct FlowerPlantListView: View {
+    
+    //State var for search text input
     @State var searchText = ""
+    //State var for if the user is busy searching
     @State var isSearching = false
-
+    
+    //Initialiser for the plants list/data
     var plants: [Plant] = Plants
+    //Initialiser for the categories list/data
     var categories: [Category] = Categories
     
     var body: some View {

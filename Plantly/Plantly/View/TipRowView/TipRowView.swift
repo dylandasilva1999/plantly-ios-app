@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TipRowView: View {
     
+    //Initialiser of tip
     var tip: Tip
     
     var body: some View {
@@ -28,7 +29,7 @@ struct TipRowView: View {
                     .lineSpacing(3.0)
             }
             .padding(EdgeInsets(.init(top: 00, leading: 120, bottom: 0, trailing: 0)))
-
+            
             Spacer()
             
             Image(tip.image)

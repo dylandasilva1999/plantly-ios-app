@@ -7,9 +7,12 @@
 
 import SwiftUI
 
+//Search Bar View
 struct SearchBarView: View {
     
+    //Binding var for the text input in search
     @Binding var searchText: String
+    //Binding var if the user is searching
     @Binding var isSearching: Bool
     
     var body: some View {
