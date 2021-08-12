@@ -23,7 +23,9 @@ struct PlantListView: View {
                     }
                 }
             }
+            .navigationTitle("Flowers")
         }
+        .accentColor(.white)
     }
 }
 

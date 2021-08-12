@@ -16,4 +16,5 @@ struct Plant: Identifiable {
     var propagation: String
     var light: String
     var category: String
+    var scientificName: String
 }
