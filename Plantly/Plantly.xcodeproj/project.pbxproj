@@ -18,6 +18,7 @@
 		57792C9E26C56A6B00F0A1F5 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792C9D26C56A6B00F0A1F5 /* CategoryItemView.swift */; };
 		57792CA026C56D8B00F0A1F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792C9F26C56D8B00F0A1F5 /* Category.swift */; };
 		57792CA226C56DB800F0A1F5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792CA126C56DB800F0A1F5 /* Categories.swift */; };
+		57792CA526C5713200F0A1F5 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792CA426C5713200F0A1F5 /* CategoriesListView.swift */; };
 		5779D29D26BBF39600C32E5A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D29C26BBF39600C32E5A /* OnboardingView.swift */; };
 		5779D29F26BBF3AD00C32E5A /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D29E26BBF3AD00C32E5A /* OnboardingScreenView.swift */; };
 		5779D2A226BC093800C32E5A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D2A126BC093800C32E5A /* DashboardView.swift */; };
@@ -49,6 +50,7 @@
 		57792C9D26C56A6B00F0A1F5 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		57792C9F26C56D8B00F0A1F5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		57792CA126C56DB800F0A1F5 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		57792CA426C5713200F0A1F5 /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
 		5779D29C26BBF39600C32E5A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5779D29E26BBF3AD00C32E5A /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		5779D2A126BC093800C32E5A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -114,13 +116,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		5762C8EB26B6F2E00009D3F9 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		5762C8EE26B6F5DE0009D3F9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +129,7 @@
 		5762C8F326B717FE0009D3F9 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				57792CA326C5711300F0A1F5 /* CategoriesListView */,
 				57792C6726C4750600F0A1F5 /* PlantDetailView */,
 				572B35C326BB1A6F0023E8DB /* TipListView */,
 				5762C8F726B71B020009D3F9 /* PlantListView */,
@@ -187,6 +183,14 @@
 				57792C9D26C56A6B00F0A1F5 /* CategoryItemView.swift */,
 			);
 			path = CategoryItemView;
+			sourceTree = "<group>";
+		};
+		57792CA326C5711300F0A1F5 /* CategoriesListView */ = {
+			isa = PBXGroup;
+			children = (
+				57792CA426C5713200F0A1F5 /* CategoriesListView.swift */,
+			);
+			path = CategoriesListView;
 			sourceTree = "<group>";
 		};
 		5779D29B26BBF2F500C32E5A /* Onboarding */ = {
@@ -263,7 +267,6 @@
 			children = (
 				5762C8F326B717FE0009D3F9 /* Scenes */,
 				5762C8EE26B6F5DE0009D3F9 /* Data */,
-				5762C8EB26B6F2E00009D3F9 /* ViewModel */,
 				5762C8EA26B6F2D70009D3F9 /* View */,
 				5762C8E926B6F29F0009D3F9 /* Model */,
 				57E00AB026A5A28400D91E2D /* PlantlyApp.swift */,
@@ -369,6 +372,7 @@
 				5762C8F526B718640009D3F9 /* PlantListView.swift in Sources */,
 				57792CA226C56DB800F0A1F5 /* Categories.swift in Sources */,
 				5762C8F026B6F5F00009D3F9 /* Plants.swift in Sources */,
+				57792CA526C5713200F0A1F5 /* CategoriesListView.swift in Sources */,
 				57BB8AE426B83F4F005C3588 /* NavBarView.swift in Sources */,
 				57BB8AE626B840B6005C3588 /* Tips.swift in Sources */,
 				57792CA026C56D8B00F0A1F5 /* Category.swift in Sources */,

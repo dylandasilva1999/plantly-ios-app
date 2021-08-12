@@ -8,33 +8,36 @@
 import SwiftUI
 
 struct CategoryItemView: View {
+    
+    var category: Category
+    
     var body: some View {
         HStack() {
-            VStack(alignment: .leading, spacing: 25) {
-                Image("plant-tips")
+            VStack(alignment: .center, spacing: 25) {
+                Image(category.image)
                     .renderingMode(.original)
                     .resizable()
                     .scaledToFill()
-                    .frame(width: 130, height: 30, alignment: .leading)
+                    .frame(width: 130, height: 130, alignment: .center)
                 
-                Text("Hello")
-                    .font(Font.custom("Kollektif", size: 20))
+                Text("\(category.category).")
+                    .font(Font.custom("Kollektif-Bold", size: 18))
                     .foregroundColor(.white)
                     .textCase(.lowercase)
-                    .frame(width: 170, height: .infinity, alignment: .leading)
+                    .frame(width: 140, height: .infinity, alignment: .leading)
                     .lineSpacing(3.0)
+                    .padding(.top, 10)
             }
-            .padding(EdgeInsets(.init(top: 0, leading: 120, bottom: 0, trailing: 0)))
         }
-        .frame(maxWidth: 300, maxHeight: 190)
+        .frame(maxWidth: 210, maxHeight: 280)
         .background(Color("Primary Green"))
-        .cornerRadius(25.0)
+        .cornerRadius(40)
     }
 }
 
 struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItemView()
+        CategoryItemView(category: Categories[0])
             .previewLayout(.sizeThatFits)
     }
 }

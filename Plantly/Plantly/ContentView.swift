@@ -58,7 +58,7 @@ struct MainView : View {
                             .frame(width: 40, height: 40)
                     }
                 }
-                .padding(.top, 20)
+                .padding(.top, 0)
             }
             .padding(EdgeInsets(.init(top: 0, leading: 35, bottom: 0, trailing: 35)))
             ZStack {
