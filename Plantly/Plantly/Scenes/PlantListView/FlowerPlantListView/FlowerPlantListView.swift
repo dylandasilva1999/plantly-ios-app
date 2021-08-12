@@ -34,8 +34,8 @@ struct FlowerPlantListView: View {
                 
                 LazyVStack() {
                     ForEach(plants.filter({searchText.isEmpty ? true : $0.name.contains(searchText)})) { item in
-                        NavigationLink(destination: PlantDetailView(plant: item)) {
-                            if (item.category == "Flowering Plants") {
+                        if (item.category == "Flowering Plants") {
+                            NavigationLink(destination: PlantDetailView(plant: item)) {
                                 PlantRowView(plant: item)
                                     .padding(.vertical, 5)
                             }

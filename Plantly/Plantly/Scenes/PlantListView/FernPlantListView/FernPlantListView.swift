@@ -34,8 +34,8 @@ struct FernPlantListView: View {
                 
                 LazyVStack() {
                     ForEach(plants.filter({searchText.isEmpty ? true : $0.name.contains(searchText)})) { item in
-                        NavigationLink(destination: PlantDetailView(plant: item)) {
-                            if (item.category == "Ferns") {
+                        if (item.category == "Ferns") {
+                            NavigationLink(destination: PlantDetailView(plant: item)) {
                                 PlantRowView(plant: item)
                                     .padding(.vertical, 5)
                             }
@@ -54,5 +54,6 @@ struct FernPlantListView: View {
 struct FernPlantListView_Previews: PreviewProvider {
     static var previews: some View {
         FernPlantListView()
+            .previewLayout(.sizeThatFits)
     }
 }

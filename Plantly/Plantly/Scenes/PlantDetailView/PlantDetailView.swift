@@ -55,12 +55,12 @@ struct PlantDetailView: View {
                                             Spacer()
                                          }
                                 })
-                                .frame(width: 150, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 150, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(20)
                                 .groupBoxStyle(PlantDetailGroupBoxMuted())
                                 
                                 GroupBox(label:
-                                        Text("LIGHT")
+                                        Text("Light")
                                             .font(Font.custom("Kollektif-Bold", size: 16))
                                             .foregroundColor(Color("Primary Green"))
                                             .textCase(/*@START_MENU_TOKEN@*/.uppercase/*@END_MENU_TOKEN@*/)
@@ -76,7 +76,7 @@ struct PlantDetailView: View {
                                             Spacer()
                                          }
                                 })
-                                .frame(width: .infinity, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 155, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .padding(.leading, 5)
                                 .cornerRadius(20)
                                 .groupBoxStyle(PlantDetailGroupBoxMuted())
@@ -99,7 +99,7 @@ struct PlantDetailView: View {
                                             Spacer()
                                          }
                                 })
-                                .frame(width: .infinity, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 320, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(20)
                                     .padding(.top, -6)
                                 .groupBoxStyle(PlantDetailGroupBoxMuted())
@@ -121,7 +121,7 @@ struct PlantDetailView: View {
                                             Spacer()
                                          }
                                 })
-                                .frame(width: .infinity, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                .frame(width: 320, height: 75, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 .cornerRadius(20)
                                     .padding(.top, 6)
                                 .groupBoxStyle(PlantDetailGroupBoxGreen())
