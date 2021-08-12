@@ -35,7 +35,7 @@ let Plants: [Plant] = [
     Plant(name: "African Iris", description: "Its sturdy, reed-like foliage is evergreen and a wonderful accent plant in the landscape.", image: "african-iris", type: "Bulb, Perennial", propagation: "Division", light: "Part Sun, Sun", category: "Flowering Plants"),
     
     //Verbena
-    Plant(name: "Verbena", description: "Verbena is the ideal plant to cascade over retaining walls, containers, baskets, and window boxes.", image: "verbena-plant", type: "Annual, Perennial", propagation: "Seed, Stem Cuttings", light: "Sun", category: "Flowering Plants"),
+    Plant(name: "Verbena", description: "Verbena is the ideal plant to cascade over retaining walls, containers, baskets, and window boxes.", image: "verbena-plant", type: "Annual", propagation: "Seed, Stem Cuttings", light: "Sun", category: "Flowering Plants"),
     
     /*
      Conifers, cycads and allies
