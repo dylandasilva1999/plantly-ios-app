@@ -33,10 +33,11 @@ struct DashboardView: View {
                                 .foregroundColor(.black)
                                 .multilineTextAlignment(.center)
                             Spacer()
-                            Text("click any item")
+                            Text("View in menu")
                                 .font(Font.custom("Kollektif", size: 18))
                                 .foregroundColor(Color("Light Grey"))
                                 .multilineTextAlignment(.center)
+                                .textCase(.lowercase)
                         }
                         HStack {
                             HStack() {
