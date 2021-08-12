@@ -19,7 +19,7 @@ struct PlantListView: View {
             ScrollView {
                 HStack {
                     Text("Plants")
-                        .font(Font.custom("Kollektif-Bold", size: 34))
+                        .font(Font.custom("Kollektif-Bold", size: 28))
                         .foregroundColor(.black)
                     Spacer()
                 }
