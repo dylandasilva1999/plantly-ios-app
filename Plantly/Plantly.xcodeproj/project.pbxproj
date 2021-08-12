@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57107F1326C59F13004E3E9C /* ConiferPlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57107F1226C59F13004E3E9C /* ConiferPlantListView.swift */; };
+		57107F1626C5A05B004E3E9C /* FernPlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57107F1526C5A05B004E3E9C /* FernPlantListView.swift */; };
+		57107F1926C5A107004E3E9C /* MossPlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57107F1826C5A107004E3E9C /* MossPlantListView.swift */; };
 		572B35C526BB1A910023E8DB /* TipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572B35C426BB1A910023E8DB /* TipListView.swift */; };
 		5762C8ED26B6F4A00009D3F9 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762C8EC26B6F4A00009D3F9 /* Plant.swift */; };
 		5762C8F026B6F5F00009D3F9 /* Plants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762C8EF26B6F5F00009D3F9 /* Plants.swift */; };
@@ -19,6 +22,7 @@
 		57792CA026C56D8B00F0A1F5 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792C9F26C56D8B00F0A1F5 /* Category.swift */; };
 		57792CA226C56DB800F0A1F5 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792CA126C56DB800F0A1F5 /* Categories.swift */; };
 		57792CA526C5713200F0A1F5 /* CategoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792CA426C5713200F0A1F5 /* CategoriesListView.swift */; };
+		57792CA826C593C400F0A1F5 /* FlowerPlantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57792CA726C593C400F0A1F5 /* FlowerPlantListView.swift */; };
 		5779D29D26BBF39600C32E5A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D29C26BBF39600C32E5A /* OnboardingView.swift */; };
 		5779D29F26BBF3AD00C32E5A /* OnboardingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D29E26BBF3AD00C32E5A /* OnboardingScreenView.swift */; };
 		5779D2A226BC093800C32E5A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5779D2A126BC093800C32E5A /* DashboardView.swift */; };
@@ -39,6 +43,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57107F1226C59F13004E3E9C /* ConiferPlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConiferPlantListView.swift; sourceTree = "<group>"; };
+		57107F1526C5A05B004E3E9C /* FernPlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FernPlantListView.swift; sourceTree = "<group>"; };
+		57107F1826C5A107004E3E9C /* MossPlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MossPlantListView.swift; sourceTree = "<group>"; };
 		572B35C426BB1A910023E8DB /* TipListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipListView.swift; sourceTree = "<group>"; };
 		5762C8EC26B6F4A00009D3F9 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
 		5762C8EF26B6F5F00009D3F9 /* Plants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plants.swift; sourceTree = "<group>"; };
@@ -51,6 +58,7 @@
 		57792C9F26C56D8B00F0A1F5 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		57792CA126C56DB800F0A1F5 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		57792CA426C5713200F0A1F5 /* CategoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListView.swift; sourceTree = "<group>"; };
+		57792CA726C593C400F0A1F5 /* FlowerPlantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerPlantListView.swift; sourceTree = "<group>"; };
 		5779D29C26BBF39600C32E5A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5779D29E26BBF3AD00C32E5A /* OnboardingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreenView.swift; sourceTree = "<group>"; };
 		5779D2A126BC093800C32E5A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
@@ -83,6 +91,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57107F1126C59EF9004E3E9C /* ConiferPlantListView */ = {
+			isa = PBXGroup;
+			children = (
+				57107F1226C59F13004E3E9C /* ConiferPlantListView.swift */,
+			);
+			path = ConiferPlantListView;
+			sourceTree = "<group>";
+		};
+		57107F1426C5A048004E3E9C /* FernPlantListView */ = {
+			isa = PBXGroup;
+			children = (
+				57107F1526C5A05B004E3E9C /* FernPlantListView.swift */,
+			);
+			path = FernPlantListView;
+			sourceTree = "<group>";
+		};
+		57107F1726C5A0EE004E3E9C /* MossPlantListView */ = {
+			isa = PBXGroup;
+			children = (
+				57107F1826C5A107004E3E9C /* MossPlantListView.swift */,
+			);
+			path = MossPlantListView;
+			sourceTree = "<group>";
+		};
 		572B35C326BB1A6F0023E8DB /* TipListView */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +180,10 @@
 		5762C8F726B71B020009D3F9 /* PlantListView */ = {
 			isa = PBXGroup;
 			children = (
+				57107F1726C5A0EE004E3E9C /* MossPlantListView */,
+				57107F1426C5A048004E3E9C /* FernPlantListView */,
+				57107F1126C59EF9004E3E9C /* ConiferPlantListView */,
+				57792CA626C593A300F0A1F5 /* FlowerPlantListView */,
 				5762C8F426B718640009D3F9 /* PlantListView.swift */,
 			);
 			path = PlantListView;
@@ -191,6 +227,14 @@
 				57792CA426C5713200F0A1F5 /* CategoriesListView.swift */,
 			);
 			path = CategoriesListView;
+			sourceTree = "<group>";
+		};
+		57792CA626C593A300F0A1F5 /* FlowerPlantListView */ = {
+			isa = PBXGroup;
+			children = (
+				57792CA726C593C400F0A1F5 /* FlowerPlantListView.swift */,
+			);
+			path = FlowerPlantListView;
 			sourceTree = "<group>";
 		};
 		5779D29B26BBF2F500C32E5A /* Onboarding */ = {
@@ -365,6 +409,8 @@
 				5779D29F26BBF3AD00C32E5A /* OnboardingScreenView.swift in Sources */,
 				57792C9E26C56A6B00F0A1F5 /* CategoryItemView.swift in Sources */,
 				57E00AB326A5A28400D91E2D /* ContentView.swift in Sources */,
+				57107F1626C5A05B004E3E9C /* FernPlantListView.swift in Sources */,
+				57792CA826C593C400F0A1F5 /* FlowerPlantListView.swift in Sources */,
 				5762C8F226B702AA0009D3F9 /* PlantRowView.swift in Sources */,
 				5779D2A226BC093800C32E5A /* DashboardView.swift in Sources */,
 				572B35C526BB1A910023E8DB /* TipListView.swift in Sources */,
@@ -378,9 +424,11 @@
 				57792CA026C56D8B00F0A1F5 /* Category.swift in Sources */,
 				57792C6C26C52F1C00F0A1F5 /* SearchBarView.swift in Sources */,
 				57792C6326C452B400F0A1F5 /* SettingsView.swift in Sources */,
+				57107F1326C59F13004E3E9C /* ConiferPlantListView.swift in Sources */,
 				57BB8AE826B840CA005C3588 /* Tip.swift in Sources */,
 				5779D2A526BC09AD00C32E5A /* MenuView.swift in Sources */,
 				57BB8AEB26B84797005C3588 /* TipRowView.swift in Sources */,
+				57107F1926C5A107004E3E9C /* MossPlantListView.swift in Sources */,
 				5779D29D26BBF39600C32E5A /* OnboardingView.swift in Sources */,
 				5762C8ED26B6F4A00009D3F9 /* Plant.swift in Sources */,
 				57E00AB126A5A28400D91E2D /* PlantlyApp.swift in Sources */,

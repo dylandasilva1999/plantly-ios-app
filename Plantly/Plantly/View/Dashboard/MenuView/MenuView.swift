@@ -90,4 +90,4 @@ struct MenuView_Previews: PreviewProvider {
     }
 }
 
-var menuItems = ["Dashboard", "Settings"]
+var menuItems = ["Dashboard", "Settings", "All Plants", "Flowering", "Conifers", "Ferns", "Moss"]

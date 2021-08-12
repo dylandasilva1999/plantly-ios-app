@@ -1,25 +1,25 @@
 //
-//  PlantListView.swift
+//  MossPlantListView.swift
 //  Plantly
 //
-//  Created by Dylan da Silva on 2021/08/01.
+//  Created by Dylan da Silva on 2021/08/12.
 //
 
 import SwiftUI
 
-struct PlantListView: View {
-    
+struct MossPlantListView: View {
     @State var searchText = ""
     @State var isSearching = false
 
     var plants: [Plant] = Plants
+    var categories: [Category] = Categories
     
     var body: some View {
         NavigationView {
             ScrollView {
                 HStack {
-                    Text("Plants")
-                        .font(Font.custom("Kollektif-Bold", size: 34))
+                    Text(categories[3].category)
+                        .font(Font.custom("Kollektif-Bold", size: 28))
                         .foregroundColor(.black)
                     Spacer()
                 }
@@ -35,8 +35,10 @@ struct PlantListView: View {
                 LazyVStack() {
                     ForEach(plants.filter({searchText.isEmpty ? true : $0.name.contains(searchText)})) { item in
                         NavigationLink(destination: PlantDetailView(plant: item)) {
-                            PlantRowView(plant: item)
-                                .padding(.vertical, 5)
+                            if (item.category == "Moss") {
+                                PlantRowView(plant: item)
+                                    .padding(.vertical, 5)
+                            }
                         }
                     }
                 }
@@ -47,11 +49,11 @@ struct PlantListView: View {
         }
         .accentColor(.white)
     }
+
 }
 
-struct PlantListView_Previews: PreviewProvider {
+struct MossPlantListView_Previews: PreviewProvider {
     static var previews: some View {
-        PlantListView()
-            .previewLayout(.sizeThatFits)
+        MossPlantListView()
     }
 }

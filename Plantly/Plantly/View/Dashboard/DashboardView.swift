@@ -141,7 +141,7 @@ struct DashboardView: View {
                     .frame(height: 500)
                 }
                 .frame(maxWidth: .infinity)
-                .padding(EdgeInsets(.init(top: 30, leading: 0, bottom: 0, trailing: 0)))
+                .padding(EdgeInsets(.init(top: 20, leading: 0, bottom: 0, trailing: 0)))
             }
         }
     }

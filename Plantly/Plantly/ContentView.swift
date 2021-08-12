@@ -60,10 +60,15 @@ struct MainView : View {
                 }
                 .padding(.top, 0)
             }
-            .padding(EdgeInsets(.init(top: 0, leading: 35, bottom: 0, trailing: 35)))
+            .padding(EdgeInsets(.init(top: 0, leading: 35, bottom: 10, trailing: 35)))
             ZStack {
                 DashboardView().opacity(self.index == "Dashboard" ? 1 : 0)
                 SettingsView().opacity(self.index == "Settings" ? 1 : 0)
+                PlantListView().opacity(self.index == "All Plants" ? 1 : 0)
+                FlowerPlantListView().opacity(self.index == "Flowering" ? 1 : 0)
+                ConiferPlantListView().opacity(self.index == "Conifers" ? 1 : 0)
+                FernPlantListView().opacity(self.index == "Ferns" ? 1 : 0)
+                MossPlantListView().opacity(self.index == "Moss" ? 1 : 0)
             }
         }
         .background(Color.white)

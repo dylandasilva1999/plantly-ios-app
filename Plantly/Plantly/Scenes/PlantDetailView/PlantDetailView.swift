@@ -20,13 +20,13 @@ struct PlantDetailView: View {
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
-                    .frame(width: .infinity, height: 500, alignment: .top)
+                    .frame(width: UIScreen.main.bounds.width, height: 500, alignment: .top)
 
                 VStack {
                     ZStack {
                         RoundedRectangle(cornerRadius: 50, style: .continuous)
                             .foregroundColor(.white)
-                            .frame(width: UIScreen.main.bounds.width, height: 500, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                            .frame(width: UIScreen.main.bounds.width, height: 580, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .padding(.top, 360)
                         VStack(alignment: .leading, spacing: 20) {
                             Text(plant.name)
@@ -127,8 +127,8 @@ struct PlantDetailView: View {
                                 .groupBoxStyle(PlantDetailGroupBoxGreen())
                             }
                         }
-                        .frame(width: 320, height: .infinity, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                        .padding(.top, 360)
+                        .frame(width: 320, height: 380, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .padding(.top, 260)
                     }
                 }
             }
