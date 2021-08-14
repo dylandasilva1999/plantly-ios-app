@@ -255,7 +255,7 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 [linkedin-url]: https://www.linkedin.com/in/dylan-da-silva-72b56a20a/
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[image1]: Images/Image1.png
+[image1]: Images/Image1-new.png
 [image2]: Images/Image2.png
 [image3]: Images/Image3.png
 [image4]: Images/Image4.png
