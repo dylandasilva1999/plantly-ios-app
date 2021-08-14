@@ -38,7 +38,7 @@ struct ConiferPlantListView: View {
                     .padding(.top, 10)
                 
                 LazyVStack() {
-                    ForEach(plants.filter({searchText.isEmpty ? true : $0.name.contains(searchText)})) {
+                    ForEach(plants.filter({searchText.isEmpty ? true : $0.name.contains(searchText) || $0.type.contains(searchText)})) {
                         item in
                         if (item.category == "Conifers") {
                             NavigationLink(destination: PlantDetailView(plant: item)) {
