@@ -58,7 +58,7 @@
 <!--PROJECT DESCRIPTION-->
 ## About the Project
 
-<!--![image1][image1]-->
+![image1][image1]
 
 ### Project Description
 
@@ -99,30 +99,30 @@ Requires iOS 13 and Xcode 11
 
 ### Features
 
-<!--![image2][image2]-->
+![image2][image2]
 ### Customised Onboarding
 A full onboarding to assist the user in understanding the app features and functionality.
 
-<!--![image3][image3]-->
 ### Plant Tips
 A plant tips slider on the dashboard that shuffle daily tips on growing plants.
 
-<!--![image4][image4]-->
+![image3][image3]
 ### Multiple Plant Categories
 Mutliple plant categories to make is easier for the user.
 
-<!--![image5][image5]-->
+![image4][image4]
 ### Individual Plant Details
 View a list of plants, and click on them to go to an individual details view.
 
+![image5][image5]
 ### Custom Menu
 Customised menu that shows a preview of the current screen.
 
-### Search Bar
-Search bar on each plant list screen. The ability to search by name or type of plant.
-
 ### Reset Settings
 Ability to reset settings to default.
+
+### Search Bar
+Search bar on each plant list screen. The ability to search by name or type of plant.
 
 ### Functionality
 
@@ -140,16 +140,16 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
-<!--![image6][image6]-->
-<!--![image7][image7]-->
+![image6][image6]
+![image7][image7]
 
 ### Wireframes
 
-<!--![image8][image8]-->
+![image8][image8]
 
 ### User-flow
 
-<!--![image9][image9]-->
+![image9][image9]
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -186,8 +186,7 @@ The `Development Process` is the technical implementations and functionality don
 <!-- MOCKUPS -->
 ## Mockups
 
-<!--![image10][image10]-->
-<!--![image11][image11]-->
+![image10][image10]
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
@@ -254,3 +253,15 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/dylan-da-silva-72b56a20a/
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[image1]: Images/Image1.png
+[image2]: Images/Image2.png
+[image3]: Images/Image3.png
+[image4]: Images/Image4.png
+[image5]: Images/Image5.png
+[image6]: Images/Image6.png
+[image7]: Images/Image7.png
+[image8]: Images/Image8.png
+[image9]: Images/Image9.png
+[image10]: Images/Image10.jpg
