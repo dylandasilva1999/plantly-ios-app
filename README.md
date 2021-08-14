@@ -37,7 +37,7 @@
   * [Built with](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
-  * [How to install](#how-to-install)
+  * [Installation](#installation)
 * [Features and Functionality](#features-and-functionality)
    * [Features](#features)
    * [Functionality](#functionality)
@@ -47,7 +47,6 @@
    * [User-flow](#user-flow)
 * [Development Process](#development-process)
    * [Implementation](#implementation)
-   * [Peer Reviews](#peer-reviews)
 * [Mockups](#mockups)
 * [Video Demonstration](#video-demonstration)
 * [Roadmap](#roadmap)
@@ -84,41 +83,55 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Ensure that you have the latest version of Xcode installed on your machine.
-
-### How to install
+Requires iOS 13 and Xcode 11
 
 ### Installation
-Here are a couple of ways to clone this repo:
 
-1. Clone the repo
-```sh
-git clone https:://github.com/dylandasilva1999/plantly-ios-app.git
-```
-2. Open the project
-
-Open the project in Xcode.
+1. In Xcode go to
+  ```sh
+  File -> Swift Packages -> Add Package Dependency
+  ```
+2. and paste in the repo's url:
+`https://github.com/ClaudiaAF/Alchemist`
 
 <!-- FEATURES AND FUNCTIONALITY-->
 ## Features and Functionality
 
 ### Features
 
-### Features to be listed soon
-
-Features will be listed here in the near future.
-
 <!--![image2][image2]-->
+### Customised Onboarding
+A full onboarding to assist the user in understanding the app features and functionality.
 
 <!--![image3][image3]-->
+### Plant Tips
+A plant tips slider on the dashboard that shuffle daily tips on growing plants.
 
 <!--![image4][image4]-->
+### Multiple Plant Categories
+Mutliple plant categories to make is easier for the user.
+
+<!--![image5][image5]-->
+### Individual Plant Details
+View a list of plants, and click on them to go to an individual details view.
+
+### Custom Menu
+Customised menu that shows a preview of the current screen.
+
+### Search Bar
+Search bar on each plant list screen. The ability to search by name or type of plant.
+
+### Reset Settings
+Ability to reset settings to default.
 
 ### Functionality
 
-### Functionality to be listed soon
-
-Functionality will be listed here in the near future.
+* `@AppStorage` utilised for the onboarding, holding the value of the current page.
+* `@AppStorage` utilised for the onboarding, whether the user has done the onboarding.
+* `@State` used for holding the "index" of all pages for the menu, and "show" for when to display the view.
+* `ScrollView` and `LazyVStack` used for the list of plants.
+* `GeometryReader` utilised to create a customised plant tips scroll animation.
+* `@Binding` utilised for holding the value typed in the search bar, and if the user is typing in the search bar.
 
 <!-- CONCEPT PROCESS -->
 ## Concept Process
@@ -127,16 +140,16 @@ The `Conceptual Process` is the set of actions, activities and research that was
 
 ### Ideation
 
-<!--![image5][image5]-->
 <!--![image6][image6]-->
+<!--![image7][image7]-->
 
 ### Wireframes
 
-<!--![image7][image7]-->
+<!--![image8][image8]-->
 
 ### User-flow
 
-<!--![image8][image8]-->
+<!--![image9][image9]-->
 
 <!-- DEVELOPMENT PROCESS -->
 ## Development Process
@@ -147,25 +160,34 @@ The `Development Process` is the technical implementations and functionality don
 
 #### Challenges
 
-Challenges will be listed here in the near future.
+* Understanding Swift and SwiftUI logic.
+* Grasping how to create functional responsive layouts.
+* MVVM coding structure and file structure.
+* Transitioning between views using `NavigationView` alongside `NavigationLink`.
+* Resetting the settings to the defaults.
+* Utilising the `Property Wrapper` when needed.
 
-### Peer Reviews
+#### Highlights
 
-The `Peer Reviews` were conducted by my fellow students and lecturer.
-
-#### Feedback
-
-Feedback will be listed here in the near future.
+* Managing to fix a bug when resettings the settings crashing the current view.
+* The user interface design and user experience of the application.
+* Building a customised menu to switch between views.
+* Time and scope management, finishing the project in time.
+* Personalising the application with extra features, like animations and adding categories with more data.
 
 #### Future Changes
 
-Future developments will be listed here in the near future.
+* Making the category cards on the dashboard clickable to navigate to the specific screen.
+* Add a full login system and profile section within the app.
+* Customised back button in the plant details view.
+* Ability to favourite which plants you like most.
+* Scanning a plant and adding it to the library.
 
 <!-- MOCKUPS -->
 ## Mockups
 
-<!--![image9][image9]-->
 <!--![image10][image10]-->
+<!--![image11][image11]-->
 
 <!-- VIDEO DEMONSTRATION -->
 ## Video Demonstration
@@ -219,6 +241,13 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 * [My lecturer Armand Pretorius](https://github.com/ArmandPretorius)
 * [New Research Article](https://www.pri.org/stories/2014-01-09/new-research-plant-intelligence-may-forever-change-how-you-think-about-plants)
 * [Medicine and Facts Article](https://crazycrittersinc.com/over-50-amazing-plant-facts/)
+* [Plant Library Website](https://www.bhg.com/gardening/plant-dictionary/)
+* [Onboarding Tutorial](https://www.youtube.com/watch?v=HVAMShhJOUo)
+* [SwiftUI Basic App Tutorial](https://www.youtube.com/watch?v=99nevoaOxXA&t=4s)
+* [Custom Menu](https://www.youtube.com/watch?v=D_KTHUVzy0c)
+* [Custom Animated Scroller](https://www.youtube.com/watch?v=EBbhIbI2Hg8&t=10s)
+* [SwiftUI Documentation](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+* [Hacking With Swift](https://www.hackingwithswift.com/quick-start/swiftui)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!--[image1]: Images/Image1.png-->
