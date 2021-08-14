@@ -9,8 +9,10 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    //App storage for the onboarding
     @AppStorage("isOnboarding") var isOnboarding: Bool?
+    //Use app storage to remeber the currentPage
+    @AppStorage("currentPage") var currentPage = 1
+    @State private var showingAlert = false
     
     var body: some View{
         GeometryReader{_ in
@@ -101,7 +103,7 @@ struct SettingsView: View {
                         Spacer()
                         
                         Button(action: {
-                            
+                            showingAlert = true
                         }) {
                             HStack {
                                 Text("Reset Settings")
@@ -115,6 +117,13 @@ struct SettingsView: View {
                             .cornerRadius(20)
                         }
                         .padding(.bottom, 20)
+                        .alert(isPresented:$showingAlert) {
+                            Alert(title: Text("Reset Settings"), message: Text("Are you sure you want to exit the app, and reset to default settings"), primaryButton: .destructive(Text("Exit")) {
+                                    currentPage = 1
+                                    isOnboarding = true
+                                    exit(0)
+                            }, secondaryButton: .cancel())
+                        }
                         
                     }
                     .padding(.leading, 35)
