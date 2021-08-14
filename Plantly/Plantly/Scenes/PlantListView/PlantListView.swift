@@ -21,7 +21,7 @@ struct PlantListView: View {
         NavigationView {
             ScrollView {
                 HStack {
-                    Text("Plants")
+                    Text("All Plants")
                         .font(Font.custom("Kollektif-Bold", size: 28))
                         .foregroundColor(.black)
                     Spacer()

@@ -118,7 +118,7 @@ struct SettingsView: View {
                         }
                         .padding(.bottom, 20)
                         .alert(isPresented:$showingAlert) {
-                            Alert(title: Text("Reset Settings"), message: Text("Are you sure you want to exit the app, and reset to default settings"), primaryButton: .destructive(Text("Exit")) {
+                            Alert(title: Text("Reset Settings"), message: Text("Are you sure you want to reset your settings and close the app"), primaryButton: .destructive(Text("Exit")) {
                                     currentPage = 1
                                     isOnboarding = true
                                     exit(0)
