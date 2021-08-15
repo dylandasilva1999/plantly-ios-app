@@ -24,6 +24,7 @@ struct PlantListView: View {
                     Text("All Plants")
                         .font(Font.custom("Kollektif-Bold", size: 28))
                         .foregroundColor(.black)
+                        .accessibilityIdentifier("all-plant-list-title")
                     Spacer()
                 }
                 .padding(.leading, 30)

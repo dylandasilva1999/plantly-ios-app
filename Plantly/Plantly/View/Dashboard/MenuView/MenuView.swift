@@ -24,13 +24,16 @@ struct MenuView: View {
                             .resizable()
                             .frame(width: 65, height: 65)
                             .padding(.leading, 20)
+                            .accessibilityIdentifier("profile-image")
                         VStack(alignment: .leading, spacing: 8) {
                             Text("Dylan da Silva")
                                 .font(Font.custom("Kollektif-Bold", size: 20))
                                 .foregroundColor(.white)
+                                .accessibilityIdentifier("profile-name")
                             Text("South Africa, SA")
                                 .font(Font.custom("Kollektif", size: 18))
                                 .foregroundColor(Color("Dark Green"))
+                                .accessibilityIdentifier("profile-location")
                         }
                         .padding(.leading, 5)
                     }
@@ -52,8 +55,10 @@ struct MenuView: View {
                                     .textCase(.lowercase)
                                     .foregroundColor(.white)
                                     .font(Font.custom("Kollektif", size: 20))
+                                    .accessibilityIdentifier("menu-item-all-plants")
                             }
                             .padding(.vertical, 5)
+                            .accessibilityIdentifier("menu-item-all-plants-button")
                         }
                     }
                     Spacer()

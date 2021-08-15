@@ -52,8 +52,9 @@ struct MainView : View {
                         Image("menu-icon")
                             .resizable()
                             .frame(width: 30, height: 20)
-                        
                     }
+                    .accessibilityIdentifier("menu-icon")
+                    
                     Spacer()
                     Button(action: {
                     }) {

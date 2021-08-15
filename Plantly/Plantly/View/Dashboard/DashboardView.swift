@@ -16,9 +16,11 @@ struct DashboardView: View {
                         Text("Greetings")
                             .font(Font.custom("Kollektif-Bold", size: 30))
                             .foregroundColor(.black)
+                            .accessibilityIdentifier("greetings")
                         Text("Dylan!")
                             .font(Font.custom("Kollektif-Bold", size: 30))
                             .foregroundColor(Color("Primary Green"))
+                            .accessibilityIdentifier("greetings-name")
                         Spacer()
                     }
                     .padding(EdgeInsets(.init(top: 0, leading: 35, bottom: 0, trailing: 35)))
