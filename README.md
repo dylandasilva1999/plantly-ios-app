@@ -193,14 +193,7 @@ The `Development Process` is the technical implementations and functionality don
 
 To see a run through of the application, click below:
 
-[View Demo]()
-
-<!-- PROMO VIDEO -->
-## Promo Video
-
-To see the promo video, click below:
-
-[View Promo Video]()
+[View Demo](https://youtu.be/7TwhfcML1SE)
 
 <!-- ROADMAP -->
 ## Roadmap
