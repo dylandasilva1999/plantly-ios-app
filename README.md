@@ -92,7 +92,7 @@ Requires iOS 13 and Xcode 11
   File -> Swift Packages -> Add Package Dependency
   ```
 2. and paste in the repo's url:
-`https://github.com/ClaudiaAF/Alchemist`
+`https://github.com/dylandasilva1999/plantly-ios-app`
 
 <!-- FEATURES AND FUNCTIONALITY-->
 ## Features and Functionality
